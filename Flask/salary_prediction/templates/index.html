@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Howdy Modi!</title>
+</head>
+<body>
+<marquee>
+Santhosh Suresh is an adept technologist
+</marquee>
+<div>
+<form method ='post' action="{{url_for('predict')}}">
+    <input type="number" name = "exp" placeholder = "Fill this out" required="required" />
+    <input type="number" name = "Name" placeholder = "Fill this out" />
+    <input type="number" name = "Age" placeholder = "Fill this out" required = "required"/>
+    <!-- this is an HTML comment -->
+    <!-- notice that HTML tags can also be ended by just using / sign
+    at the end of the opening tag itself-->
+
+    <button type ="submit" class ="btm-btm-primary">predict it<!doctype html>
+        </button>
+</form>
+    <br>
+    <br>
+    {{prediction_text}}
+</div>
+</body>
+</html>
